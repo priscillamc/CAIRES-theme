@@ -10,7 +10,7 @@
 					<a href="mailto:uf-caires@ufl.edu">Contact webmaster</a><br>
 					<?php
 					$last = $wpdb->get_var("SELECT post_modified FROM $wpdb->posts order by post_modified DESC LIMIT 1");
-					echo "Site last updated: " . mysql2date(get_settings('date_format'), $last);
+					echo "Site last updated: " . mysql2date(get_option('date_format'), $last);
 					?></p>
 			</div>
 			<div class="medium-8 columns">
