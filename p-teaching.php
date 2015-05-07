@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Current projects
+Template Name: Teaching resources
 */
 get_header(); ?>
 

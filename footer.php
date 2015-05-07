@@ -10,18 +10,25 @@
 					<a href="mailto:uf-caires@ufl.edu">Contact webmaster</a><br>
 					<?php
 					$last = $wpdb->get_var("SELECT post_modified FROM $wpdb->posts order by post_modified DESC LIMIT 1");
-					echo "Site last updated: " . mysql2date(get_settings('date_format'), $last);
+					echo "Site last updated: " . mysql2date(get_option('date_format'), $last);
 					?></p>
 			</div>
 			<div class="medium-8 columns">
 			<ul class="inline-list">
-				<li><a href="#"><strong>HOME</strong></a></li>
-				<li><a href="#"><strong>ABOUT</strong></a></li>
-				<li><a href="#"><strong>AFFILIATES</strong></a></li>
-				<li><a href="#"><strong>GRANTS</strong></a></li>
-				<li><a href="#"><strong>TEACHING</strong></a></li>
-				<li><a href="#"><strong>PROJECTS</strong></a></li>
-				<li><a href="#"><strong>CONTACT</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>current-projects"><strong>HOME</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>about"><strong>ABOUT</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>faculty-affiliates"><strong>AFFILIATES</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>grant-opportunities"><strong>GRANTS</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>teaching-resources"><strong>TEACHING</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>current-projects"><strong>PROJECTS</strong></a></li>
+				<li><a href="<?php $url = home_url('/');
+        echo $url;?>contact"><strong>CONTACT</strong></a></li>
 			</ul>
 			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 				<!--<?php dynamic_sidebar('footer-three'); ?>-->

@@ -146,6 +146,9 @@ function the_excerpt_max_charlength($charlength) {
   }
 }
 
+/** 
+ * Enables PHP in widgets, disabling this feature due to security restrictions
+ */
 function php_execute($html){
 if(strpos($html,"<"."?php")!==false){ ob_start(); eval("?".">".$html);
 $html=ob_get_contents();
@@ -153,7 +156,7 @@ ob_end_clean();
 }
 return $html;
 }
-add_filter('widget_text','php_execute',100);
+//add_filter('widget_text','php_execute',100);
 
 add_theme_support( 'html5', array( 'search-form' ) );
 

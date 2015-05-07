@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/foundation.css">
       <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
       <script src="<?php bloginfo('template_directory');?>/js/vendor/modernizr.js"></script>
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,6 +74,6 @@
       <a class="hot-link-top right" href="<?php $url = home_url('/');
         echo $url;?>current-projects" title="See our current projects"></a>
       <a class="hot-link-bottom right" href="<?php $url = home_url('/');
-        echo $url;?>faculty-experts" title="Join our network of experts"></a>
+        echo $url;?>faculty-affiliates" title="Join our network of experts"></a>
     </div>
   </div>
